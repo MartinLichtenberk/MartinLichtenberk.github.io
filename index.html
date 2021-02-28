@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Mali:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="menu-btn">
+            <i class="uil uil-bars"></i>
+            <i class="uil uil-times"></i>
+        </label>
+        <nav id="sidebar">
+            <ul class="list-items">
+                <li><a href="#p1" class="cool-link">Home</a></li>
+                <li><a href="#p2" class="cool-link">Kdo jsem</a></li>
+                <li><a href="#p3" class="cool-link">Weby</a></li>
+                <li><a href="#p4" class="cool-link">Grafika</a></li>
+                <li><a href="#p5" class="cool-link">Umění</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="panel p1" id="p1">
+        <div class="container">
+            <h1 class="layer" data-speed="-2">Mlichty</h1>
+            <img src="Image/brushh.png" class="layer" data-speed="-3" alt="logom">
+        </div>
+    </div>
+    <div class='icon-scroll'></div>
+    </div>
+    <div class="panel p2" id="p2">
+        <div class="container">
+            <h2>Kdo jsem</h2>
+            <div class="zarobrz">
+                <div class="zarov01">
+
+                    <h3>Front-end developer</h3>
+                    <img src="Image/Datový zdroj 2.png" alt="underline">
+                    <img class="imgp2" src="Image/htmlmonitor.png" alt="imghtml">
+                    <p>Lorečýšříám ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus delectus magni obcaecati beatae accusantium inventore optio corrupti, temporibus amet totam velit, suscipit sit nemo voluptatum possimus facere recusandae
+                        mollitia!
+                    </p>
+                </div>
+                <div class="zarov01">
+                    <h3>Graphic/Designér</h3>
+                    <img src="Image/Datový zdroj 2.png" alt="underline">
+                    <img class="imgp2" src="Image/designermonitor.png" alt="imgdesi">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident at consequatur aspernatur expedita quam dolore facilis reprehenderit magnam. Ab exercitationem maiores sequi laborum velit possimus quidem quis voluptatibus vitae.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="panel p3" id="p3">
+        <div class="container">
+            <h2></h2>
+            <div class="zarobrz">
+                <div class="zarov02">
+
+                    <h3></h3>
+                    <img src="" alt="">
+                    <img class="imgp3" src="Image/webnavrh" alt="oldweb">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus delectus magni obcaecati beatae accusantium inventore optio corrupti, temporibus amet totam velit, suscipit sit nemo voluptatum possimus facere recusandae
+                        mollitia!
+                    </p>
+                </div>
+                <div class="zarov02">
+                    <h3></h3>
+                    <img src="" alt="">
+                    <img class="" src="" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos provident at consequatur aspernatur expedita quam dolore facilis reprehenderit magnam. Ab exercitationem maiores sequi laborum velit possimus quidem quis voluptatibus vitae.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="panel p4" id="p4">
+        <div class="container">
+            <h2>Grafika</h2>
+            <img src="Image/Datový zdroj 7.png" class="layer" data-speed="-5" alt="img">
+        </div>
+    </div>
+    <div class="panel p5" id="p5">
+        <div class="container">
+            <div class="gallery">
+                <a href="Image/Stromocean.jpg" target="__blank"><img src="Image/Stromocean.jpg" alt="obraz-more" width="200px" /></a>
+                <a href="Image/zima01igg.jpg" target="__blank"><img src="Image/zima01igg.jpg" alt="obraz-more" width="200px" /></a>
+                <a href="Image/mlichty02 ig.jpg" target="__blank"><img src="Image/mlichty02 ig.jpg" alt="obraz-more" width="200px" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.querySelector(".p1").addEventListener("mousemove", parallax);
+        document.querySelector(".p4").addEventListener("mousemove", parallax);
+
+        function parallax(e) {
+            document.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed');
+
+                const x = (window.innerWidth - e.pageX * speed) / 100;
+                const y = (window.innerHeight - e.pageY * speed) / 100;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
