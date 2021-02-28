@@ -197,7 +197,7 @@
     }
     
     .p1 img {
-        width: 1090px;
+        width: 190px;
         margin-top: 35px;
         margin-left: 150px;
         position: absolute;
@@ -265,6 +265,20 @@
     }
     /*stranka3*/
     
+    .p3 .container h2 {
+        font-family: 'Mali', cursive;
+        font-size: 55px;
+        text-shadow: 2px 2px 2px #000;
+        color: #fff;
+    }
+    
+    .p3 .container h3 {
+        font-family: 'Mali', cursive;
+        font-size: 45px;
+        text-shadow: 2px 2px 2px #000;
+        color: #fff;
+    }
+    
     .p3 .zarobrz {
         display: flex;
         justify-content: center;
@@ -283,15 +297,27 @@
     }
     
     .p3 .imgp3 {
+        padding-top: 35px;
+        width: 500px;
+    }
+    
+    .p3 p {
         padding-top: 40px;
-        width: 700px;
+        font-family: 'Mali', cursive;
+        font-size: 25px;
+        text-shadow: 2px 2px 2px #000;
+        color: #fff;
     }
     
     .p3 .container {
-        height: 100vh;
-        width: 100vw;
-        margin: auto;
+        padding-top: 170px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: #48494B;
+        width: 100%;
+        position: relative;
         background-attachment: fixed;
     }
     /*stranka4*/
@@ -313,7 +339,7 @@
     
     .p4 .container {
         height: 100vh;
-        background-image: url(../Image/grafik.jpg);
+        background-image: url(../Image/Bez\ názvu-12.jpg);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -334,8 +360,6 @@
         padding-left: 55px;
         font-size: 24px;
     }
-    
-    .p4 .layer {}
     /*strankta5*/
     
     .p5 {
@@ -388,6 +412,9 @@
         .p2 .zarov01 {
             width: 100%;
         }
+        .p3 .zarov01 {
+            width: 100%;
+        }
         .p1 img {
             width: 82%;
             margin-top: 15%;
@@ -404,10 +431,16 @@
         .p2 .zarov01 {
             width: 50%;
         }
+        .p3 .zarov01 {
+            width: 50%;
+        }
         .panel {
             width: 100%;
         }
         .p2 .container h3 {
+            font-size: 37px;
+        }
+        .p3 .container h3 {
             font-size: 37px;
         }
         .p1 img {
@@ -428,7 +461,7 @@
             margin-left: 13%;
         }
         .p1 h1 {
-            font-size: 170px;
+            font-size: 180px;
             top: 260px;
         }
     }
